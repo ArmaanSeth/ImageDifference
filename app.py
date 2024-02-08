@@ -31,10 +31,12 @@ def getRes(im1,im2):
     # cv2.imshow('ImageA', imageA)
     # cv2.imshow('ImageB', imageB)
     # cv2.waitKey()
+    st.write(f"Similarity Score: {score}")
     return imageB
 
 def main():
     st.set_page_config(page_title="FindDifferece", page_icon="🔍")
+    st.header("Find difference between two images 🖼️")
     im1=st.file_uploader("Upload image 1", type=["png", "jpg", "jpeg"])
     im2=st.file_uploader("Upload image 2", type=["png", "jpg", "jpeg"])
     if st.button("Process"):
