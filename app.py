@@ -28,9 +28,10 @@ def getRes(im1,im2):
             x,y,w,h = cv2.boundingRect(c)
             cv2.rectangle(imageB, (x, y), (x + w, y + h), (0,0,0), 2)
 
-    # cv2.imshow('ImageA', imageA)
-    # cv2.imshow('ImageB', imageB)
-    # cv2.waitKey()
+    # cv2.imshow('diff', contours)
+    # cv2.imshow('thresh', thresh)
+    # cv2.waitKey(1)
+    cv2.waitKey()
     st.write(f"Similarity Score: {score}")
     return imageB
 
