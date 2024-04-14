@@ -30,8 +30,7 @@ def getRes(im1,im2):
 
     # cv2.imshow('diff', contours)
     # cv2.imshow('thresh', thresh)
-    # cv2.waitKey(1)
-    cv2.waitKey()
+    # cv2.waitKey()
     st.write(f"Similarity Score: {score}")
     return imageB
 
